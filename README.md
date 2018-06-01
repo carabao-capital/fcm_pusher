@@ -1,3 +1,8 @@
+# IMPORTANT NOTE
+
+This is supposed to be a fork of [fcm_pusher](https://github.com/amarildolucas/fcm_pusher) that we intended to extend but the repo has a lot of merge conflicts.
+The basis of this code is from the bundled gem and published on rubygems.org. Please see this [issue](https://github.com/amarildolucas/fcm_pusher/issues/2) from the original repo.
+
 # FCM Pusher
 A Ruby gem to **send push notifications** from Firebase Cloud Messaging to Android and iOS devices.
 
@@ -41,9 +46,9 @@ Everything starts with the object initialization.
 ```ruby
 pusher = FcmPusher.new("fcm_api_key")
 ```
-The initializer will create an instance of the object with the attribute `priority` initialized with `FcmPusher::Priority::HIGH` by default. You can change this value according to your apps requirements by using `FcmPusher::Priority::NORMAL`. 
+The initializer will create an instance of the object with the attribute `priority` initialized with `FcmPusher::Priority::HIGH` by default. You can change this value according to your apps requirements by using `FcmPusher::Priority::NORMAL`.
 
-## Send 
+## Send
 After the object initialization send notification is *super* easy. You need to call the `send_once` method or `send_all` only and pass the respective data as params:
 
 ```ruby
@@ -64,7 +69,7 @@ The `send_one` and `send_all` methods have simillary attributes. The only differ
 * **icon:** the app icon.
 
 * **sound:** the emited sound in device when notification is delivered.
-* **badge:** an integer number that appear counting the number of the notifications in the app icon in the device. 
+* **badge:** an integer number that appear counting the number of the notifications in the app icon in the device.
 * **priority:** Sets the message priority. Valid values are `FcmPusher::Priority::NORMAL` and `FcmPusher::Priority::HIGH`. In iOS, they correspond to priorities 5 and 10 of APNs.
 
 # `.env` file
@@ -78,4 +83,4 @@ A Ruby gem to load environment variables from `.env`. You can learn more about t
 * Push to the branch (git push origin my-new-feature)
 * Create new Pull Request
 
-If you want a better idea of how fcm_pusher works, contact me at **vmarildo@gmail.com**
+If you want a better idea of how fcm_pusher works, contact the original owner at **vmarildo@gmail.com**
