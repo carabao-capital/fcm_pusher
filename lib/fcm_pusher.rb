@@ -64,8 +64,10 @@ class FcmPusher
           body: body,
           icon: options[:icon],
           badge: options[:badge],
-          sound: options[:sound]
+          sound: options[:sound],
+          click_to_action: options[:click_to_action]
         },
+        data: options[:data],
         priority: options[:priority]
       }.to_json
     end
@@ -82,8 +84,10 @@ class FcmPusher
           body: body,
           icon: options[:icon],
           badge: options[:badge],
-          sound: options[:sound]
+          sound: options[:sound],
+          click_to_action: options[:click_to_action]
         },
+        data: options[:data],
         priority: options[:priority]
       }.to_json
     end
