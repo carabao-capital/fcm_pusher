@@ -65,7 +65,7 @@ class FcmPusher
           icon: options[:icon],
           badge: options[:badge],
           sound: options[:sound],
-          click_to_action: options[:click_to_action]
+          click_action: options[:click_action],
         },
         data: options[:data],
         priority: options[:priority]
@@ -85,7 +85,7 @@ class FcmPusher
           icon: options[:icon],
           badge: options[:badge],
           sound: options[:sound],
-          click_to_action: options[:click_to_action]
+          click_action: options[:click_action],
         },
         data: options[:data],
         priority: options[:priority]
